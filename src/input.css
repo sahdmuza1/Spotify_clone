@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+
+
+  /* Default styles (Desktop) */
+  .hero-section {
+      width: 1425px;
+      height: 408px;
+      background-image: url('https://wwwmarketing.scdn.co/static/images/free/desktop-hero.jpeg');
+      background-size: contain; /* Ensures the whole image fits */
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 auto; 
+  }
+
+  /* Mobile view */
+  @media (max-width: 768px) {
+      .hero-section {
+          width: 485px;
+          height: 450px;
+          background-image: url('https://wwwmarketing.scdn.co/static/images/free/desktop-hero.jpeg'); /* Use a mobile-specific image if needed */
+          background-size: contain;
+      }
+  }
+  @media (max-width: 991px) {
+    .gLaoGw > article {
+        background-position: center 70%; /* Adjust for smaller screens */
+    }
+}
+
+  li:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Desktop View: Horizontal layout with 4 items per row */
+  @media (min-width: 1024px) {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    li {
+      width: calc(25% - 20px); /* 4 items per row */
+    }
+  }
+
+  /* Mobile View: Stack items vertically */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      width: 100%; /* Full width on smaller screens */
+      margin-bottom: 20px;
+    }
+  }
+
+
+

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>SpotifyClone</title>
+  <link rel="icon" href="Assets/spotify-brands-solid.svg" type="image/x-icon">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+</head>
+<body>
+
+  <nav class="bg-black text-white">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute left-4 top-4 md:static md:ml-[90px] flex items-center">
+          <img src="Assets/Spotify_Full_Logo_RGB_White-300x82.png" class="h-8 w-auto">
+        </div>
+        <div class="sm:hidden absolute right-4 top-4">
+          <input type="checkbox" id="menu-toggle" class="hidden peer">
+          <label for="menu-toggle" class="text-2xl cursor-pointer peer-checked:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <label for="menu-toggle" class="text-2xl cursor-pointer hidden peer-checked:block">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <div class="hidden peer-checked:flex flex-col absolute top-12 right-0 bg-black shadow-lg w-48 rounded-md">
+            <a href="#" class="block px-4 py-2 text-sm">Premium</a>
+            <a href="#" class="block px-4 py-2 text-sm">Support</a>
+            <a href="#" class="block px-4 py-2 text-sm">Sign up</a>
+            <a href="#" class="block px-4 py-2 text-sm">Log in</a>
+          </div>
+        </div>
+        <div class="hidden sm:flex sm:ml-6 space-x-4 items-center">
+          <a href="#" class="rounded-md px-3 py-2 text-sm font-medium hover:text-white">Premium</a>
+          <a href="#" class="rounded-md px-3 py-2 text-sm font-medium hover:text-white">Support</a>
+          <a href="#" class="rounded-md px-3 py-2 text-sm font-medium hover:text-white">Download</a>
+          <span class="text-white">|</span>
+          <a href="#" class="rounded-md px-3 py-2 text-sm font-medium hover:text-white">Sign up</a>
+          <a href="#" class="rounded-md px-3 py-2 text-sm font-medium hover:text-white">Log in</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="relative w-full h-screen bg-cover bg-center flex flex-col justify-center items-center text-center" style="background-image: url('https://wwwmarketing.scdn.co/static/images/free/desktop-hero.jpeg');">
+    <h1 class="text-white text-3xl sm:text-5xl font-bold px-4 sm:px-0">
+      Play millions of songs <br> and podcasts for free
+    </h1>
+    <button class="mt-6 bg-white text-black font-semibold py-2 px-6 text-lg rounded-full">
+      Sign up free
+    </button>
+  </section>
+  <section class="my-12">
+    <header>
+      <h1 class="text-center text-4xl font-bold mb-12 ">Why Spotify?</h1>
+    </header>
+    <ul class="flex flex-col sm:flex-row flex-wrap justify-center gap-8 px-8">
+      <li class="flex flex-row sm:flex-col items-center gap-4 text-left sm:text-center transition transform duration-300 px-7">
+        <img src="https://content-tooling.spotifycdn.com/images/a4c240da-85fc-4538-8761-6b34c9e33ba9_play.svg" alt="Feature 1">
+        <div class="sm:mt-3">
+          <h1 class="text-m font-bold ">Play your favorites </h1>
+          <p class="text-s font-medium ">Listen to the songs you love, and <br>discover new music and <br>podcasts.</p>
+        </div>
+      </li>
+      <li class="flex flex-row sm:flex-col items-center gap-4 text-left sm:text-center transition transform duration-300 px-7">
+        <img src="https://content-tooling.spotifycdn.com/images/932b2610-f7fe-4c61-9cb0-bf146076e5ba_library.svg
+        " alt="Feature 2">
+        <div class="sm:mt-3">
+          <h1 class="text-m font-bold">Playlists made easy</h1>
+          <p class="text-s font-medium">We'll help you make playlists. Or <br> enjoy playlists made by music <br> experts.</p>
+        </div>
+      </li>
+      <li class="flex flex-row sm:flex-col items-center gap-4 text-left sm:text-center transition transform duration-300 px-7">
+        <img src="https://content-tooling.spotifycdn.com/images/760a4a59-3411-4e41-a08b-8f9cb87c794a_heart.svg" alt="Feature 3">
+        <div class="sm:mt-3">
+          <h1 class="text-m font-bold ">Make it yours</h1>
+          <p class="text-s font-medium">Tell us what you like, and we'll <br> recommend music for you.</p>
+        </div>
+      </li>
+      <li class="flex flex-row sm:flex-col items-center gap-4 text-left sm:text-center transition transform duration-300 px-7 pb-20">
+        <img src="https://content-tooling.spotifycdn.com/images/d3ddb3f3-bea5-4b79-8dd7-4cf1a9c976d8_lightning.svg
+        " alt="Feature 4">
+        <div class="sm:mt-3">
+          <h1 class="text-m font-bold">Save mobile data</h1>
+          <p class="text-s font-medium">To use less data when you play <br>music, turn on Data Saver in <br> Settings.</p>
+        </div>
+      </li> 
+    </ul>
+</section>
+
+  
+
+  
+  <section>
+      <div class="flex items-center justify-center bg-[#1ED760]" style="height: 450px;">
+        <div class="text-center">
+            <h1 class="text-black text-5xl font-bold">It's free. No credit card required.</h1>
+            <div class="flex justify-center mt-6">
+                <img src="https://wwwmarketing.scdn.co/static/images/free/desktop_benefit.png" alt="Colorful Faces" class="w-3/4 max-w-lg">
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+    <div class="max-w-2xl mx-auto py-10">
+      <h1 class="text-4xl font-bold text-center mb-6">Got questions?</h1>
+      <div class="space-y-2">
+          <div class="overflow-hidden">
+              <button class="w-full text-left px-6 py-4 font-bold" onclick="toggleFAQ(this)">
+                  How do I create a playlist?
+              </button>
+              <div class="hidden p-4 ">
+                  <p>Playlists are a great way to save collections of music, either for your own listening or to share.</p>
+                  <p>To create one:</p>
+                  <ol class="list-decimal pl-5">
+                      <li>Tap Your Library.</li>
+                      <li>Tap <strong class="text-green-800">CREATE</strong>.</li>
+                      <li>Give your playlist a name.</li>
+                      <li>Start adding songs (and we'll help you along).</li>
+                  </ol>
+              </div>
+          </div>
+          <div class="overflow-hidden">
+              <button class="w-full text-left px-6 py-4 font-bold" onclick="toggleFAQ(this)">
+                  How do I activate Data Saver mode?
+              </button>
+              <div class="hidden p-4 ">
+                <ol class="list-decimal pl-5">
+                  <li>Tap <strong class="text-green-800">Home</strong>.</li>
+                  <li>Tap <strong class="text-green-800">Settings</strong>.</li>
+                  <li>Tap <strong class="text-green-800">Data Saver</strong>.</li>
+                  <li>Switch on Data Saver.</li>
+              </ol>
+              </div>
+          </div>
+          <div class=" overflow-hidden">
+              <button class="w-full text-left px-6 py-4 font-bold" onclick="toggleFAQ(this)">
+                  Is it only possible to shuffle play music?
+              </button>
+              <div class="hidden p-4 text-black">
+                  <h4 class="mb-5">Any playlist with the shuffle icon will play on shuffle.</h4>
+                  <h4>Some playlists won't have the shuffle icon, so you can tap any song to play it.</h4>
+              </div>  
+          </div>
+          <div class="border-hidden overflow-hidden">
+              <button class="w-full text-left px-6 py-4 font-bold " onclick="toggleFAQ(this)">
+                  Where can I find Podcasts?
+              </button>
+              <div class="hidden p-4 text-black">
+                  <p>Tap <strong class="text-green-800">Search</strong>. Under<strong class="text-green-800">Browse All</strong> , tap Podcasts.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+ </section>
+
+
+  <section class="relative w-full h-screen flex flex-col justify-center items-center text-center" style="background-image: url('https://wwwmarketing.scdn.co/static/images/free/tablet-closing.jpeg');  background-position: center; background-size: cover; background-repeat: no-repeat; height: 100vh; width: 100%;">
+     <h1 class="text-white text-3xl sm:text-5xl font-bold px-4 sm:px-0">
+      Ready? Let's play.
+    </h1>
+    <button class="mt-6 bg-white text-black font-semibold py-2 px-6 text-lg rounded-full">
+      Sign up free
+    </button>
+ </section>
+
+ <div>
+  <footer class="bg-black text-white p-12">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-start mb-10">
+            <div>
+                <img src="Assets/Spotify_Full_Logo_RGB_White-300x82.png" alt="Spotify Logo" class="w-36">
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="bg-gray-900 p-3 rounded-full hover:opacity-75">
+                  <i class="fa-brands fa-instagram w-6 h-6" ></i>
+                </a>
+                <a href="#" class="bg-gray-900 p-3 rounded-full hover:opacity-75">
+                  <i class="fa-brands fa-x-twitter w-6 h-6 " ></i>
+                </a>
+                <a href="#" class="bg-gray-900 p-3 rounded-full hover:opacity-75">
+                  <i class="fa-brands fa-facebook w-6 h-6 "></i>
+                </a>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-sm">
+            <div>
+                <h2 class="font-bold uppercase text-gray-400">Company</h2>
+                <ul class="mt-4 space-y-3">
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Jobs</a></li>
+                    <li><a href="#" class="hover:underline">For the Record</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="font-bold uppercase text-gray-400">Communities</h2>
+                <ul class="mt-4 space-y-3">
+                    <li><a href="#" class="hover:underline">For Artists</a></li>
+                    <li><a href="#" class="hover:underline">Developers</a></li>
+                    <li><a href="#" class="hover:underline">Advertising</a></li>
+                    <li><a href="#" class="hover:underline">Investors</a></li>
+                    <li><a href="#" class="hover:underline">Vendors</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="font-bold uppercase text-gray-400">Useful Links</h2>
+                <ul class="mt-4 space-y-3">
+                    <li><a href="#" class="hover:underline">Support</a></li>
+                    <li><a href="#" class="hover:underline">Web Player</a></li>
+                    <li><a href="#" class="hover:underline">Free Mobile App</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="font-bold uppercase text-gray-400">Spotify Plans</h2>
+                <ul class="mt-4 space-y-3">
+                    <li><a href="#" class="hover:underline">Premium Individual</a></li>
+                    <li><a href="#" class="hover:underline">Premium Duo</a></li>
+                    <li><a href="#" class="hover:underline">Premium Family</a></li>
+                    <li><a href="#" class="hover:underline">Premium Student</a></li>
+                    <li><a href="#" class="hover:underline">Spotify Free</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#000000] mt-12 px-12 py-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- Bottom Left (Legal Links) -->
+            <div class="flex flex-wrap space-x-5 text-xs text-gray-400">
+                <a href="#" class="hover:underline">Legal</a>
+                <a href="#" class="hover:underline">Safety & Privacy Center</a>
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Cookies</a>
+                <a href="#" class="hover:underline">About Ads</a>
+                <a href="#" class="hover:underline">Accessibility</a>
+            </div>
+            <div class="text-gray-400 text-sm">India (English)</div>
+            <div class="text-gray-400 text-xs">&copy; 2025 SpotifyClone</div>
+        </div>
+    </div>
+</footer>
+
+
+
+</div>
+
+
+
+
+            
+<script>
+  function toggleFAQ(element) {
+      const answer = element.nextElementSibling;
+      answer.classList.toggle("hidden");
+  }
+</script>    
+     
+    
+   </div>
+</body>
+</html>
